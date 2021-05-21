@@ -10,4 +10,3 @@
     - [Filter by Palindromic](/FilterByPalindromic).
 - Suggest your custom version of the predicate and place it in separate project.
 - Develop unit tests. Consider testing large arrays.
-- Develop [moq](https://github.com/Moq/moq4/wiki/Quickstart)-tests.
