@@ -22,6 +22,7 @@ The task requires .NET 6 SDK installed.
     _Discuss this question and your answer with your trainer, if you work in a regular group._
 
 - Define predicate as a `Verify` method of the [IPredicate](FilterByPredicate/IPredicate.cs) interface. The implementation details of the predicate logic are left to the derived classes.
+
 - Develop derived classes for described above predicates. Place the solutions in two separate projects:
 
     - [Filter by Digit](FilerByDigitWithFramework);
@@ -33,5 +34,4 @@ The task requires .NET 6 SDK installed.
 
 - Suggest your custom version of the predicate and place it in separate project. Add unit tests for this solution to [FilterTests](FilterByPredicates.Tests/FilterTests.cs) class.
 
-- Study the [Template Method](https://refactoring.guru/design-patterns/strategy) design pattern.
-
+- Study the [Strategy](https://refactoring.guru/design-patterns/strategy) design pattern.
