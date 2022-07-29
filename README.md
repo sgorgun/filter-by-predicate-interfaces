@@ -1,12 +1,37 @@
 # Filter by Various Predicate. Interfaces
 
-## Task description ##
+Intermediate level task for practicing inheritance classes, abstract classes and methods, Template Method design pattern.
 
-- Analyze your solutions of the `Filter by Digit` and `Filter by Palindromic` tasks in terms of code common to them. What part of the code can be made reusable, and which part is customizable, depending on the specific way of matching the number with a certain attribute (`predicate`)?    
-- Using the capabilities of `interfaces` (no default interfaces methods C# 8.0), propose the option of allocating reusable code. Do not use LINQ or delegates.
-- Place common code into project [Filter By Various Predicates](/FilterByVariousPredicates).
-- Demonstrate the possibility of using common code with two different predicate of the number. Place solutions for predicates in two separate projects:
-    - [Filter by Digit](/FilerByDigit);
-    - [Filter by Palindromic](/FilterByPalindromic).
-- Suggest your custom version of the predicate and place it in separate project.
-- Develop unit tests. Consider testing large arrays.
+Estimated time to complete the task - 2h.
+
+The task requires .NET 6 SDK installed.
+
+## Task description
+
+- Develop the [ArrayExtensions](ArrayExtensions) class with following methods:
+
+    - the `FilterByDigit` method, which takes an array of integers as a parameter and, based on it, forms a new array only from those elements that contain the given digit;
+    - the `FilterByPalindromic` method, which takes an array of integers as a parameter and, based on it, forms a new array only from those elements that are palindromes.    
+    _When implementing these methods, follow the suggested patterns._
+
+- Analyze the resulting methods:
+    - what part of their code is the same?
+    - which part depends on a specific _predicate_*?      
+    _*A predicate  is a statement made about a subject. The subject of the statement is that about which the statement is made. A predicate in programming is an expression that uses one or more values with a boolean result._
+
+    _Discuss this question and your answer with your trainer, if you work in a regular group._
+
+- Define predicate as a `Verify` method of the [IPredicate](FilterByPredicate/IPredicate.cs) interface. The implementation details of the predicate logic are left to the derived classes.
+- Develop derived classes for described above predicates. Place the solutions in two separate projects:
+
+    - [Filter by Digit](FilerByDigitWithFramework);
+    - [Filter by Palindromic](FilterByPalindromicWithFramework).
+
+- Run all unit tests.
+
+- Study [mock](http://xunitpatterns.com/Mock%20Object.html) tests and the [Moq](https://github.com/Moq/moq4/wiki/Quickstart) Framework.
+
+- Suggest your custom version of the predicate and place it in separate project. Add unit tests for this solution to [FilterTests](FilterByPredicates.Tests/FilterTests.cs) class.
+
+- Study the [Template Method](https://refactoring.guru/design-patterns/strategy) design pattern.
+
