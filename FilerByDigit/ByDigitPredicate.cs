@@ -4,7 +4,7 @@ using FilterByPredicate;
 namespace FilterByDigit
 {
     /// <summary>
-    /// Зredicate that determines the presence of some digit in integer.
+    /// Predicate that determines the presence of some digit in integer.
     /// </summary>
     public class ByDigitPredicate : IPredicate
     {
