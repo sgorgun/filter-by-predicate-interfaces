@@ -1,4 +1,5 @@
-﻿using FilterByPredicate;
+using System;
+using FilterByPredicate;
 
 namespace FilterByPalindromic
 {
@@ -10,7 +11,7 @@ namespace FilterByPalindromic
         /// <inheritdoc/>
         public bool Verify(int number)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }
