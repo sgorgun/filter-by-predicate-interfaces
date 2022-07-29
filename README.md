@@ -25,8 +25,8 @@ The task requires .NET 6 SDK installed.
 
 - Develop derived classes for described above predicates. Place the solutions in two separate projects:
 
-    - [Filter by Digit](FilerByDigitWithFramework);
-    - [Filter by Palindromic](FilterByPalindromicWithFramework).
+    - [Filter by Digit](FilerByDigit);
+    - [Filter by Palindromic](FilterByPalindromic).
 
 - Run all unit tests.
 
