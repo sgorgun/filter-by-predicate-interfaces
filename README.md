@@ -12,7 +12,7 @@ The task requires .NET 6 SDK installed.
 
     - the `FilterByDigit` method, which takes an array of integers as a parameter and, based on it, forms a new array only from those elements that contain the given digit;
     - the `FilterByPalindromic` method, which takes an array of integers as a parameter and, based on it, forms a new array only from those elements that are palindromes.    
-    _When implementing these methods, follow the suggested patterns._
+    _When implementing these methods, follow the suggested skeletons._
 
 - Analyze the resulting methods:
     - what part of their code is the same?
