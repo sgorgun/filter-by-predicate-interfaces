@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using FilterByPredicate;
 
 namespace FilterByDigit
 {
     /// <summary>
-    /// Predicate for the presence of a digit in an integer.
+    /// Зredicate that determines the presence of some digit in integer.
     /// </summary>
     public class ByDigitPredicate : IPredicate
     {
