@@ -19,7 +19,7 @@ namespace FilterByDigit
         }
         
         /// <inheritdoc/>
-        public bool Verify(int number)
+        public bool IsMatch(int number)
         {
             throw new NotImplementedException();
         }

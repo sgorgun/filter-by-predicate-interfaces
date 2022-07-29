@@ -9,7 +9,7 @@ namespace FilterByPalindromic
     public class ByPalindromicPredicate : IPredicate
     {
         /// <inheritdoc/>
-        public bool Verify(int number)
+        public bool IsMatch(int number)
         {
             throw new NotImplementedException();
         }

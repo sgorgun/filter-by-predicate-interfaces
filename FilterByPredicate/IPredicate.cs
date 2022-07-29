@@ -8,8 +8,8 @@
         /// <summary>
         /// Presents function-predicate for integer.
         /// </summary>
-        /// <param name="number">Integer to be verify.</param>
-        /// <returns>Result of verifying.</returns>
-        bool Verify(int number);
+        /// <param name="number">Integer to be matching.</param>
+        /// <returns>Result of matching.</returns>
+        bool IsMatch(int number);
     }
 }

@@ -14,7 +14,7 @@ namespace FilterByPredicates.Tests
         {
             var mock = new Mock<IPredicate>();
 
-            mock.Setup(i => i.Verify(It.Is<int>(i => i % 2 == 0))).Returns(It.IsAny<bool>());
+            mock.Setup(i => i.IsMatch(It.Is<int>(i => i % 2 == 0))).Returns(It.IsAny<bool>());
 
             IPredicate predicate = mock.Object;
 
@@ -22,7 +22,7 @@ namespace FilterByPredicates.Tests
 
             source.Select(predicate);
 
-            mock.Verify(p => p.Verify(It.IsAny<int>()), Times.Exactly(count));
+            mock.Verify(p => p.IsMatch(It.IsAny<int>()), Times.Exactly(count));
         }
 
         [TestCase(100)]
@@ -31,10 +31,9 @@ namespace FilterByPredicates.Tests
         {
             var mock = new Mock<IPredicate>();
 
-            mock.Setup(i => i.Verify(It.Is<int>(i => i % 2 == 0))).Returns(true);
+            mock.Setup(i => i.IsMatch(It.Is<int>(i => i % 2 == 0))).Returns(true);
 
             var predicate = mock.Object;
-            
             var source = Enumerable.Range(1, count).ToArray();
 
             var expected = source.Where(i => i % 2 == 0).ToArray();
