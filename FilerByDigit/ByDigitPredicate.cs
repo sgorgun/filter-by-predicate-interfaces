@@ -21,7 +21,7 @@ namespace FilterByDigit
         /// <inheritdoc/>
         public bool Verify(int number)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }
