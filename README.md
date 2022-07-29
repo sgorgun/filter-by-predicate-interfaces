@@ -23,6 +23,8 @@ The task requires .NET 6 SDK installed.
 
 - Define predicate as a `Verify` method of the [IPredicate](FilterByPredicate/IPredicate.cs) interface. The implementation details of the predicate logic are left to the derived classes.
 
+- Put the common part of the code as a skeleton of operations in the `Select` extesion method of the [ArrayExtensions](FilterByPredicate) static class. The method must contain the `IPredicate` interface as a parameter.
+
 - Develop derived classes for described above predicates. Place the solutions in two separate projects:
 
     - [Filter by Digit](FilerByDigit);
