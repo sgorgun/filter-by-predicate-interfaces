@@ -17,9 +17,10 @@
     <ItemGroup>
         <ProjectReference Include="..\FilerByDigit\FilterByDigit.csproj" />
         <ProjectReference Include="..\FilterByPalindromic\FilterByPalindromic.csproj" />
-        <ProjectReference Include="..\FilterByVariousPredicates\FilterByVariousPredicates.csproj" />
+        <ProjectReference Include="..\FilterByPredicate\FilterByPredicate.csproj" />
     </ItemGroup>
     <ItemGroup>
+        <PackageReference Include="Moq" Version="4.18.1" />
         <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
