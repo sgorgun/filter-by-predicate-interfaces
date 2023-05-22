@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using FilterByDigit;
 using FilterByPalindromic;
 using FilterByPredicate;
@@ -34,7 +34,7 @@ namespace FilterByPredicates.Tests
             yield return new TestCaseData(
                 new ByDigitPredicate { Digit = 0 },
                 new[] { int.MinValue, int.MinValue, int.MinValue, int.MaxValue, int.MaxValue },
-                new int[] { });
+                Array.Empty<int>());
             yield return new TestCaseData(
                 new ByPalindromicPredicate(),
                 new[] { 717, 828, 45, 58, 881, 11711, 252 },
@@ -46,7 +46,7 @@ namespace FilterByPredicates.Tests
             yield return new TestCaseData(
                 new ByPalindromicPredicate(),
                 new[] { 17, 82, 45, 58, 881, 117, 25 },
-                new int[] { });
+                Array.Empty<int>());
             yield return new TestCaseData(
                 new ByPalindromicPredicate(),
                 new[] { 2212332, 0, 1405644, 12345, 1, -1236674, 123321, 1111111 },
